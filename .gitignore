@@ -1,0 +1,41 @@
+# Скомпилированные файлы и директории плагинов
+.terraform/
+**/.terraform/*
+linux_amd64/
+
+# Файлы состояния Terraform (содержат чувствительные данные об инфраструктуре)
+*.tfstate
+*.tfstate.*
+
+# Файлы с переменными (содержат ваши SSH-ключи, ID облака и пароли)
+*.tfvars
+*.tfvars.json
+
+# Файлы планов выполнения
+*.tfplan
+
+# Логи падений
+crash.log
+crash.*.log
+
+# Файлы переопределений
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Конфигурация CLI
+.terraformrc
+terraform.rc
+
+# Возможные локальные SSH-ключи и сервисные ключи (на всякий случай)
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+key.json
+authorized_key.json
+
+# Системные файлы ОС
+.DS_Store
+Thumbs.db
